@@ -18,11 +18,14 @@ from django.urls import path,include
 from rest_framework.routers import DefaultRouter
 
 from users import views as users_views
+from materials import views as materials_views
 
 
 router = DefaultRouter()
 # router.register(r'class', materials_views.ClassViewSet, basename='product')
 router.register(r'users', users_views.UserViewSet, basename='user')
+router.register(r'class', materials_views.ClassViewSet, basename='class')
+router.register(r'subject', materials_views.SubjectViewSet, basename='subject')
 
 
 
