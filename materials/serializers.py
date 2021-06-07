@@ -17,3 +17,10 @@ class SubjectSerializer(serializers.ModelSerializer):
         model = Subject
         fields = '__all__'
         read_only_fields = []
+
+class StudyMaterilSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = StudyMaterial
+        fields = '__all__'
+        

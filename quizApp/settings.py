@@ -43,7 +43,8 @@ INSTALLED_APPS = [
 
     # project apps
     'users',
-    'materials'
+    'materials',
+    'quizzes'
 ]
 
 MIDDLEWARE = [
@@ -145,3 +146,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 AUTH_USER_MODEL = 'users.User'
+LOCAL_FILE_DIR = '/home/sambit/codebase/LunchX/uploads'
